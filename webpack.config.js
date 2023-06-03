@@ -1,7 +1,4 @@
 const path = require('path')
-const {
-  WranglerJsCompatWebpackPlugin,
-} = require('wranglerjs-compat-webpack-plugin')
 
 module.exports = {
   entry: './src/index.ts',
@@ -14,17 +11,16 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
   },
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        loader: 'ts-loader',
-        options: {
-          // transpileOnly is useful to skip typescript checks occasionally:
-          // transpileOnly: true,
-        },
-      },
-    ],
-  },
-  plugins: [new WranglerJsCompatWebpackPlugin()],
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.tsx?$/,
+  //       loader: 'ts-loader',
+  //       options: {
+  //         // transpileOnly is useful to skip typescript checks occasionally:
+  //         // transpileOnly: true,
+  //       },
+  //     },
+  //   ],
+  // },
 }
