@@ -1,4 +1,7 @@
 const path = require('path')
+const {
+  WranglerJsCompatWebpackPlugin,
+} = require('wranglerjs-compat-webpack-plugin')
 
 module.exports = {
   entry: './src/index.ts',
@@ -23,4 +26,5 @@ module.exports = {
       },
     ],
   },
+  plugins: [new WranglerJsCompatWebpackPlugin()],
 }
