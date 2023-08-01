@@ -4,9 +4,9 @@ compatibility_date = "2022-03-26"
 main = "src/index.ts"
 
 [vars]
-GITHUB_ACCOUNT = 'killeencode'
-GITHUB_REPO = 'brancato'
-GITHUB_TOKEN = '' # Optional - used with private repos
+GITHUB_ACCOUNT = 'pavinrex'
+GITHUB_REPO = 'jsquare_ledger'
+GITHUB_TOKEN = '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' # Optional - used with private repos
 
 [build]
 command = "npm install && npm run build"
